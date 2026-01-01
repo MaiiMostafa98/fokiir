@@ -296,15 +296,12 @@
 {
     width: 100%;
     border-radius: 50%;
-}
- 
-.imgg .img
-{
- border-width: 0.25px;
+    border-width: 0.25px;
  border-style: solid;
  border-color: #63615c;
- 
 }
+ 
+
 .feedback .content
 {
    width: 80%;
@@ -511,22 +508,7 @@ footer
   padding-bottom: 60px;
 }
 
- footer h4
-{
-  
-    float: left;
-    text-align: center;
-   
-}
 
- footer a
-{
-  text-decoration: none;
-  color: #ff305b;
-  float: left;
-  text-align: center;
-  
-}
 
 
 
