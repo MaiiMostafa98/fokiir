@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* outline: 1px solid red; */
 }
 
 
@@ -19,7 +20,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   height: 100vh;
- background-size: cover;
+ background-size:auto ;
 }
 .homecontent
 {
@@ -29,19 +30,6 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.nav-bar
-{
-    padding-top: 20px;
-    margin: auto;
-    width:100%;
-}
-.nav-bar .logo
-{
-    float: left;
-    padding-left: 150px;
-    margin: auto;
-    width: 50%;
-}
 .nav-bar .logo a
 {
     font-size: 150%;
@@ -49,29 +37,35 @@
     color: #FF305B;
     text-decoration: none;
 }
-.nav-bar ul
+/* .nav-bar ul
 {
-    list-style: none;
-    float: right;
-    padding-right: 100px;
-}
+     display: flex;
+  gap: 20px;
+  list-style: none;
+} */
+
 .nav-bar ul li
 {
-  display: inline-block;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
   padding: 0px 10px;
 }
+
+.navbar-nav .nav-link {
+  color: #d3d3d3;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ff305b;
+}
+
 .nav-bar ul li a
 {
     color: #d3d3d3;
     text-decoration: none;
-}
-.nav-bar .fisrt-li a
-{
-    color: #FF305B;
-}
-.nav-bar ul li a:hover
-{
-    color: #ff305b;
 }
 
 .homecontent .content
@@ -90,7 +84,7 @@
 .homecontent .content h1
 {
     color: #FF305B;
-    font-size: 350%;
+    font-size: 300%;
     font-weight: 500;
 }
 .homecontent .content h4
@@ -105,48 +99,25 @@
 /*==================================== section 2 =====================================*/
 .I-HELLO
 {
-    width: 70% ;
+    width: 95%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
    
 }
 
 
-.I-HELLO .img
-{
-    width: 30%;
-  float: left;
-  border: 5px;
-  border-style : solid; 
-  border-color: rgb(67, 67, 67);
-  border-radius: 3%;
-  
-}
 .I-HELLO img
 {
-    width: 100%;
-  float: left;
+    margin: auto;
+  
   border-radius: 3%;
-  position: relative;
-  top: 15px;
-  left: 15px;
+  border: solid gray 5px;
 
 }
 
-.I-HELLO .discription
-{
-    width: 70%;
-    float: left;
-    padding-left: 70px;
-    
-}
 
-.I-HELLO .discription p
-{
-   padding-bottom: 20px;
-    border-bottom: dashed 1.5px rgb(114, 111, 111);
-    color: rgb(101, 100, 100);
-}
+
+
 
 .I-HELLO .discription h1 span
 {
@@ -155,20 +126,21 @@
 
 .I-HELLO .discription table td
 {
-    padding-right: 60px;
+    padding-right: 30px;
     padding-bottom: 7px;
-    padding-top:  15px; ;
+    padding-top:  10px; ;
 }
 
 .I-HELLO .discription button
 {
-    padding: 12px 25px;
+    padding: 7px 15px;
     margin-right: 35px;
+    margin-bottom: 10px;
+    margin-top: 20px;
     background-color: #ff305b;
     color: white;
     border-radius: 5px;
     border: none;
-    margin-bottom: 100px;
     
 }
 
@@ -181,8 +153,8 @@
 
 .Our-Services
 {
-    width: 100%;
-    padding-top: 70px;
+    width: 95%;
+    padding-top: 50px;
     margin-left: 100px;
     margin: auto;
     text-align: center;
@@ -194,17 +166,14 @@
 }
 .Our-Services .optionsss
 {
-    width: 100%;
+    
     background-color:#f1f1f1 ;
-    padding-top: 50px;
-    padding-left: 70px;
-    padding-right: 70px;
+    
    
 }
 .Our-Services .optionsss .option
 {
-    width: 25%;
-    float: left;
+    
     border-left: 20px;
     border-right: 20px;
     border-bottom: 80px;
@@ -232,26 +201,18 @@
 /* =================================== SECTION 4 ( our portofolio ) ==================================== */
 .Our-Portfolio
 {
-    width: 100%;
-    padding-top: 70px;
+   
+    width: 95%;
+    padding-top: 50px;
     margin-left: 100px;
     margin: auto;
     text-align: center;
-   
 }
-.Our-Portfolio .optionsss
-{
-    width: 80%;
-    padding-top: 50px;
-    margin: auto;
-   
-   
-}
+
 
 .Our-Portfolio .optionsss .option
 {
-    width: 33.33333%;
-    float: left;
+   
     border-left: 20px;
     border-right: 20px;
     border-bottom: 30px;
@@ -265,16 +226,10 @@
     width: 100%;
     text-align: center;
 }
-.Our-Portfolio .optionsss2
-{
-    width: 80%;
-    margin: auto;
-   
-}
+
 .Our-Portfolio .optionsss2 .option
 {
-    width: 33.33333%;
-    float: left;
+  
     border-left: 20px;
     border-right: 20px;
     border-bottom: 80px;
@@ -293,19 +248,14 @@
 .section-5
 {
     background-color: rgb(241,241,241);
-   width: 100%;
    text-align: center;
    margin-top: 80px;
    margin-bottom: 80px;
-   padding: 90px 120px;
-   float: left;
-  
+
 
 }
 .section-5 .child-of-section-5
 {
-    float: left;
-    width: 25%;
    padding-top: 10px;
    padding-bottom: 10px;
    margin: auto;
@@ -323,49 +273,39 @@
 
 /*=====================section 6 ( Client's Feedback )===========================*/
 
-
-.Clients-Feedback
-{
-    text-align: center;
-    width: 85%;
-   padding-bottom: 100px;
-   padding-left: 200px;
-    
-}
-
-.Clients-Feedback h1
-{
-    margin-bottom: 15px;
-}
 .feedback
 {
    width: 75%;
     background-color:#f1f1f1;
-    margin-top: 100px;
-    margin: auto;
+    margin-top: 50px;
     border-radius: 15px;
     padding:  70px 80px;
 }
-.feedback .img
+
+.box
 {
-    padding-right: 30px;
-    width: 20%;
-    float: left;
-    
+    margin: 30px 70px;
+    background-color:#f1f1f1;
+    border-radius: 30px;
+    padding: 20px 10px;
 }
-.feedback .img img
+
+.imgg .img img
 {
- border-radius: 50%;
+    width: 100%;
+    border-radius: 50%;
+}
+ 
+.imgg .img
+{
  border-width: 0.25px;
  border-style: solid;
  border-color: #63615c;
- width: 100%;
- padding-left: 10px;
+ 
 }
 .feedback .content
 {
    width: 80%;
-   float: left;
     text-align: left;
     
 }
@@ -407,7 +347,7 @@
 
 /*=====================section 7 ( Our Blog )==================================*/
 
-.Our-Blog
+/* .Our-Blog
 {
     width: 100%;
     background-color: #f1f1f1;
@@ -438,7 +378,7 @@
     text-align: center;
     padding-bottom: 30px;
     display: block;
-}
+} */
 
 /*=====================section 8 ( contact us )==================================*/
  
